@@ -7,7 +7,7 @@ MAINTAINER Viz <viz@linux.com>
 # add mongo db repo
 ADD mongodb.repo /etc/yum.repos.d/mongodb.repo
 
-RUN yum install -y mongo-10gen-server
+RUN yum install -y mongodb-org-server
 
 ENTRYPOINT ["/usr/bin/mongod"]
 
